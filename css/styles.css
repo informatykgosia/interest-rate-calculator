@@ -1,0 +1,399 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+ }
+
+html, body{
+  background: #fff;
+  background-image: url('../images/brillant.png');
+  margin: 0 auto;
+  height: 100%;
+  margin-top: 4em;
+  font-size: 1em;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333333;
+}
+h1{
+  font-size: 2em;
+  font-weight: 400;
+}
+h2{
+  text-align: center;
+  font-weight: 100;
+}
+.options{
+  width: 102px;
+  height: 34px;
+  background-color: #bababa;
+  position: absolute;
+  right: 0px;
+  bottom: -34px;
+}
+.options .print, .options .save, .options .send{
+  width: 33%;
+  height: 100%;
+  display: inline-block;
+  float:left;
+}
+.options .print:hover, .options .save:hover, .options .send:hover{
+  background-color: #333333;
+    -o-transition:.4s;
+  -ms-transition:.4s;
+  -moz-transition:.4s;
+  -webkit-transition:.4s;
+  transition:.4s;
+  cursor: pointer;
+}
+.options .print{
+  background: url('../images/iconmonstr-printer-icon-24.png') no-repeat;
+  background-position:center; 
+  border-right: 1px solid #fff;
+}
+.options .save{
+  background: url('../images/iconmonstr-save-icon-24.png') no-repeat;
+  background-position:center; 
+  border-right: 1px solid #fff;
+}
+.options .send{
+  background: url('../images/iconmonstr-email-3-icon-24.png') no-repeat;
+  background-position:center; 
+}
+.cal-container{
+  width: 70%;
+  max-width: 59em;
+  height:auto;
+  margin: 0 auto;
+  border: 1px solid #cacaca;
+  background: #fff;
+  position: relative;
+}
+.cal-container:after{
+  content:"";
+  clear:both;
+  display:block;
+}
+.cal-container .arrow-left,.cal-container .arrow-right{
+  background: #f0f0f0;
+  width:40px;
+  height: 100%;
+  position: absolute;
+  outline:1px solid #dadada;
+    -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+.cal-container .arrow-left{
+  left:-40px; 
+}
+.cal-container .arrow-right{
+  right:-40px;
+}
+.cal-container .arrow-left:hover,.cal-container .arrow-right:hover{
+  background:#0B6FB1;
+  outline: 1px solid #0b6fb1;
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+   -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  cursor: pointer;
+}
+.cal-container .arrow-left .triangle{
+  width: 0; 
+  height: 0; 
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent; 
+  border-right:15px solid white;
+  float:right;
+  margin-top: 300px;
+}
+.cal-container .arrow-right .triangle{
+  width: 0; 
+  height: 0; 
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent; 
+  
+  border-left:15px solid white;
+  float:left;
+  margin-top: 300px;
+}
+.cal-container h1{
+  position: absolute;
+  top: -2em;
+}
+.data, .pie-chart, .bar-chart{
+  display: inline-block;
+  padding: 2em;
+  margin: 0;
+}
+.data{
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.data form{
+  float: left;
+}
+.data .risks {
+  float:right;
+  max-width: 290px;
+}
+
+.risks .your-risk, .risks .cal-risk{
+  width:100px;
+  height: 1.2em;
+  border: 1px solid #cacaca;
+  float: right;
+}
+.your-risk .your-risk-color{
+  height: 100%;
+  width: 50px;
+  background: #3FA6AF;
+}
+.cal-risk .cal-risk-color{
+  height:100%;
+  width:60px;
+  background: #99E04F;
+}
+.risks p{
+  float:left;
+  line-height: 1em;
+  margin-top: 0px;
+}
+.pie-chart, .bar-chart{
+  width: 50%;
+  float: left;
+  min-height: 350px;
+  min-width: 390px;
+  margin: 0 auto;
+  position: relative;
+}
+@media only screen and (max-width: 1270px) {
+  .pie-chart, .bar-chart{
+    clear: left;
+    width: 100% ;
+    display: block;
+    margin: auto;
+  }
+  #pie-descr-1{
+    position: absolute;
+    left: calc(50% - 195px);
+  }
+  .bar-chart-1, .bar-chart-2, .bar-chart-3{
+    width: 120px;
+  }
+}
+.bar-chart{
+  margin-top: 0px;
+}
+#pie-descr-1{
+  position: absolute;
+  width: 100%;
+  height:400px;
+  top: 0;
+}
+p#grey{
+  color: #fff;
+  font-size:1.2em;
+  margin-left: 80px;
+  margin-top: 10px;
+}
+p#light-blue{
+  margin-left: 235px;
+  margin-top: 100px;
+  color: #fff;
+  font-size:1.2em;
+}
+p#blue{
+  margin-left: 225px;
+  margin-top: 40px;
+  color: #fff;
+  font-size:1.2em;
+}
+p#grey-3{
+  color: #fff;
+  font-size:1.2em;
+  margin-left: 110px;
+  margin-top: 130px;
+}
+p#blue-3{
+  margin-left: 225px;
+  margin-top: 40px;
+  color: #fff;
+  font-size:1.2em;
+}
+#pie-chart-1{
+  display: block;
+  margin: auto;
+}
+
+
+input{
+  min-width: 200px;
+  height: 1.5em;
+  resize: none;
+  border: 1px solid #cacaca;
+  font-size: 1em;
+  padding: 3px 5px;
+}
+input:focus{
+  outline: 2px solid #3996CF;
+}
+
+.bar-chart img{
+  width: 100%;
+  display:block;
+  margin: auto;
+}
+.bar-chart-2 img{
+  padding-top: 5px;
+}
+
+.bar-chart-1, .bar-chart-2, .bar-chart-3{
+  width: 30%;
+  height: 350px;
+  border:1px solid #cacaca;
+  display: inline-block;
+  margin: 0px 5px;
+  padding: 5px;
+}
+.bar-chart .bar-chart-1:hover{
+  outline: 2px solid #3996CF;
+  border: 1px solid #3996CF ;
+
+  -webkit-transition: outline 100ms linear 60ms;
+    -moz-transition: outline 100ms linear 60ms;
+    -o-transition: outline 100ms linear 60ms;
+    transition: outline 100ms linear 60ms;
+
+}
+.bar-chart-1.selected, .bar-chart-2.selected, .bar-chart-3.selected{
+  outline: 2px solid #3996CF;
+  border: 1px solid #3996CF;
+
+}
+
+.bar-chart .bar-chart-2:hover{
+  outline: 2px solid #3996CF;
+  border: 1px solid #3996CF;
+   -webkit-transition: outline 0ms linear 100ms;
+    -moz-transition: outline 0ms linear 100ms;
+    -o-transition: outline 0ms linear 100ms;
+    transition: outline 0ms linear 100ms;
+
+}
+.bar-chart .bar-chart-3:hover{
+  outline: 2px solid #3996CF;
+  border: 1px solid #3996CF;
+   -webkit-transition: outline 100ms linear 100ms;
+    -moz-transition: outline 100ms linear 100ms;
+    -o-transition: outline 100ms linear 100ms;
+    transition: outline 100ms linear 100ms;
+}
+.bar-chart a {
+  color: #3996CF;
+  text-decoration: none;
+  }
+
+.bar-chart a:hover h2{
+  text-decoration: underline;  
+}
+
+.bar-chart-1 .frm5j, .bar-chart-1 .frm3j, .bar-chart-1 .libor3m, 
+.bar-chart-3 .frm5j, .bar-chart-3 .frm3j, .bar-chart-2 .libor3m, .bar-chart-2 .equalization{
+  width: 80%;
+  margin: 0 auto;
+ 
+}
+
+.bar-chart-1 .frm5j{
+  background: #ABC3D2;
+  height: 20%;
+}
+
+.bar-chart-1 .frm3j{
+  background: #2487A8;
+  height: 13%;
+}
+.bar-chart-1 .libor3m{
+  background: #59CFE8 ;
+  height: 7%;
+}
+.bar-chart-2 .libor3m{
+  background: #59CFE8 ;
+  height: 30%;
+}
+.bar-chart-2 .equalization{
+  background: #fff ;
+  height: 10%;
+}
+.bar-chart-3 .frm5j{
+  background: #ABC3D2;
+  height: 13%;
+}
+
+.bar-chart-3 .frm3j{
+  background: #2487A8;
+  height: 27%;
+}
+.pie-chart-options{
+  width: 102px;
+  height: 34px;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 20px;
+
+}
+.pie-chart-options .plus, .pie-chart-options .settings, .pie-chart-options .minus{
+  width: 33%;
+  height: 100%;
+  display: inline-block;
+  float:left;
+}
+.pie-chart-options .plus:hover, .pie-chart-options .settings:hover, .pie-chart-options .minus:hover{
+  background-color: #D5E9F5;
+    -o-transition:.4s;
+  -ms-transition:.4s;
+  -moz-transition:.4s;
+  -webkit-transition:.4s;
+  transition:.4s;
+  cursor: pointer;
+}
+.pie-chart-options .plus{
+  background: url('../images/iconmonstr-plus-5-icon-24.png') no-repeat;
+  background-position:center; 
+  border-right: 1px solid #fff;
+}
+.pie-chart-options .settings{
+  background: url('../images/iconmonstr-wrench-7-icon-24.png') no-repeat;
+  background-position:center; 
+  border-right: 1px solid #fff;
+}
+.pie-chart-options .minus{
+  background: url('../images/iconmonstr-minus-5-icon-24.png') no-repeat;
+  background-position:center; 
+}
+@media only screen and (max-width: 1270px) {
+  .pie-chart{
+    clear: left;
+    width: 100% ;
+    display: block;
+    margin: auto;
+  }
+  #pie-descr-1{
+    position: absolute;
+    left: calc(50% - 195px);
+  }
+  .bar-chart{
+    display: block;
+  }
+  .bar-chart-1, .bar-chart-2, .bar-chart-3{
+    width: 120px;
+  }
+}

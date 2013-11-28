@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Interest Rate Calculator</title>
+    <meta name="description" content="Interest Rate Calculator">
+    <meta name="author" content="Lunar Logic">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/click.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id="main">
+      <div class="arrow-up">
+        <div class="triangle"></div>
+      </div>
+      <ul>
+        <a href="#"><li id="lock"></li></a>
+        <a href="#"><li>EN</li></a>
+        <a href="#"><li id="home"></li></a>
+      </ul>
+    </div>
+    <nav>
+      <ul>
+        <a href="#"><li> Mortage Calculator </li></a>
+        <a href="#"><li id="selected"> Interest Rate Calculator</li></a>
+        <a href="#"><li> Real Estate Valuation </li></a>
+        <a href="#"><li> Historical Mort. Rates</li></a>
+        <a href="#"><li> Financial Profile</li></a>
+      </ul>
+    </nav>
+
+    <div class="cal-container">
+      <div class="arrow-left">
+        <div class="triangle"></div>
+      </div>
+      <div class="arrow-right">
+        <div class="triangle"></div>
+      </div>
+      <h1> Interest Rate Calculator </h1>
+      <div class="data">
+        <form>
+          <label for="chf"> CHF </label>
+          <input type="text"></input>
+        </form>
+        <div class="risks">
+          <p> Your risk profile</p>
+          <div class="your-risk">
+            <div class="your-risk-color"></div>
+          </div>
+          <p> Calculated risk profile</p>
+          <div class="cal-risk">
+            <div class="cal-risk-color"></div>
+          </div>
+        </div>
+      </div>
+      <div class="pie-chart">
+        <canvas id="pie-chart-1" height="350" width="350px"></canvas>
+        <script src="js/piechart-2.js"></script>
+         <div id="pie-descr-1">
+          <p id="light-blue">Libor 3M <br /> 0.800%</p>
+        </div>
+        <div class="pie-chart-options">
+          <div class="plus"></div>
+          <div class="settings"></div>
+          <div class="minus"></div>
+        </div>
+      </div>
+      <div class="bar-chart">
+        <a href="index.html" id="bar-chart-1">
+          <div class="bar-chart-1">
+            <h2>CHF 1'057</h2>
+            <div class="frm5j"></div>
+            <div class="frm3j"></div>
+            <div class="libor3m"></div>
+            <h2>calculated model</h2>
+            <img src="images/generali.jpg" />
+          </div>
+        </a>
+        <a href="piechart2.html" id="bar-chart-2">
+          <div class="bar-chart-2 selected">
+            <h2>CHF 750</h2>
+            <div class="equalization"></div>
+            <div class="libor3m"></div>
+            <h2>lowest model</h2>
+            <img src="images/reiffeisen.jpg" />
+          </div>
+        </a>
+        <a href="piechart3.html" id="bar-chart-3">
+          <div class="bar-chart-3">
+            <h2>CHF 1'083</h2>
+            <div class="frm5j"></div>
+            <div class="frm3j"></div>
+            <h2>your risk profile</h2>
+            <img src="images/swisslife.jpg" />
+
+          </div>
+        </a>
+
+      </div>
+      <div class="options">
+        <div class="print"></div>
+        <div class="save"></div>
+        <div class="send"></div>
+      </div>
+    </div>
+    
+    <footer>
+    </footer>
+  </body>
+</html>
