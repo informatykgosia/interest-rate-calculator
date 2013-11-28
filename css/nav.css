@@ -1,0 +1,139 @@
+#main{
+  width: 100%;
+  height: 50px;
+  position:fixed;
+  top:0px;
+  background: red;
+  z-index:1;
+  background:#0B6FB1;
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  font-weight: 400;
+ 
+
+}
+#main ul{
+  height: 60px;
+  -webkit-padding-start: 0;
+  margin:0 auto;
+  position:fixed;
+  top: -10px;
+  right: 20%;
+}
+#main ul:after{
+  content:"";
+  clear:both;
+  display:block;
+}
+#main ul li{
+  display: inline-block;
+  width: 40px;
+  height: 60px;
+  padding:0;
+  padding-top: 27px;
+  color: #fff;
+  text-align: center;
+  border:none;
+  background: none;
+    -o-transition:.4s;
+  -ms-transition:.4s;
+  -moz-transition:.4s;
+  -webkit-transition:.4s;
+  transition:.4s;
+
+}
+#main ul a li:hover{
+  background: black;
+    -o-transition:.4s;
+  -ms-transition:.4s;
+  -moz-transition:.4s;
+  -webkit-transition:.4s;
+  transition:.4s;
+
+}
+#main ul li#lock{
+  background-image: url('../images/iconmonstr-lock-icon-24.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+#main ul li#home{
+  background-image: url('../images/iconmonstr-home-4-icon-24.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.arrow-up{
+  margin-top:40px;
+  z-index: 99;
+}
+.triangle{
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  
+  border-bottom: 10px solid white;
+  margin:auto;
+}
+  
+nav{
+  width: 10%;
+  height: 60%;
+  margin:auto;
+  display: block;
+  margin-bottom: 0px;
+  position:fixed;
+  right: 0em;
+  top: 7em;
+}
+ul{
+  height:100%;
+  -webkit-padding-start: 0;
+  display:table;
+
+}
+ul:after{
+  content:"";
+  clear:both;
+  display:block;
+}
+
+ul li{
+  display: block;
+  width: 100%;
+  height: 20%;
+  border: 1px solid #fff;
+  text-align: center;
+  background: #74AED5;
+  float:left;
+  margin:0;
+  padding: 20% 1em;
+   -o-transition:.4s;
+  -ms-transition:.4s;
+  -moz-transition:.4s;
+  -webkit-transition:.4s;
+  transition:.4s;
+  
+  
+}
+nav ul li:hover{
+  background: #3996CF;
+  color: #fff;
+   -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+
+nav ul a li {
+
+  color: #fff;
+  font-weight: 100;
+}
+nav ul li#selected{
+  background: #3996CF;
+
+}
