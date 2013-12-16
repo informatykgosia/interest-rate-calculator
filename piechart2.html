@@ -17,8 +17,9 @@
   </head>
   <body>
     <div id="main">
+      <div class="triangle-down"><div></div></div>
       <div class="arrow-up">
-        <div class="triangle"></div>
+        
       </div>
       <ul>
         <a href="#"><li id="lock"></li></a>
@@ -37,12 +38,8 @@
     </nav>
 
     <div class="cal-container">
-      <div class="arrow-left">
-        <div class="triangle"></div>
-      </div>
-      <div class="arrow-right">
-        <div class="triangle"></div>
-      </div>
+      <div class="arrow-left"></div>
+      <div class="arrow-right"></div>
       <h1> Interest Rate Calculator </h1>
       <div class="data">
         <form>
@@ -61,7 +58,7 @@
         </div>
       </div>
       <div class="pie-chart">
-        <canvas id="pie-chart-1" height="350" width="350px"></canvas>
+        <canvas id="pie-chart-1" height="320px" width="320px"></canvas>
         <script src="js/piechart-2.js"></script>
          <div id="pie-descr-1">
           <p id="light-blue">Libor 3M <br /> 0.800%</p>
@@ -76,29 +73,38 @@
         <a href="index.html" id="bar-chart-1">
           <div class="bar-chart-1">
             <h2>CHF 1'057</h2>
-            <div class="frm5j"></div>
-            <div class="frm3j"></div>
-            <div class="libor3m"></div>
+             <div class="bar">
+              <div class="bank-logo"></div>
+              <div class="frm5j"></div>
+              <div class="frm3j"></div>
+              <div class="libor3m"></div>
+            </div>
             <h2>calculated model</h2>
-            <img src="images/generali.jpg" />
+            
           </div>
         </a>
         <a href="piechart2.html" id="bar-chart-2">
           <div class="bar-chart-2 selected">
             <h2>CHF 750</h2>
-            <div class="equalization"></div>
-            <div class="libor3m"></div>
+             <div class="bar">
+              <div class="bank-logo"></div>
+              <div class="equalization"></div>
+              <div class="libor3m"></div>
+            </div>
             <h2>lowest model</h2>
-            <img src="images/reiffeisen.jpg" />
+            
           </div>
         </a>
         <a href="piechart3.html" id="bar-chart-3">
           <div class="bar-chart-3">
             <h2>CHF 1'083</h2>
+             <div class="bar">
+              <div class="bank-logo"></div>
             <div class="frm5j"></div>
             <div class="frm3j"></div>
+          </div>
             <h2>your risk profile</h2>
-            <img src="images/swisslife.jpg" />
+            
 
           </div>
         </a>
